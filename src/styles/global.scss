@@ -1,0 +1,81 @@
+@import 'tailwindcss';
+
+$glass-bg: rgba(255, 255, 255, 0.12);
+$glass-border: rgba(255, 255, 255, 0.25);
+$gold: #d4af37;
+$light-gold: #f6e27a;
+
+
+body {
+	@apply bg-night text-white overflow-x-hidden;
+	font-family: 'Poppins', sans-serif;
+}
+
+.glass {
+	background: $glass-bg;
+	border: 1px solid $glass-border;
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+}
+
+.gold-text {
+	color: $gold;
+}
+
+.gold-text {
+	background: linear-gradient(90deg, $gold, $light-gold);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.intro-bg {
+	transition: opacity 1s ease;
+}
+
+svg path {
+	filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.3));
+}
+
+/* guided tour overlay utilities */
+.guided-overlay {
+	background: rgba(2, 2, 2, 0.86);
+}
+
+/* better typography for tour */
+.font-serif {
+	font-family: 'Playfair Display', serif;
+}
+
+/* subtle hardware-accelerated transform hints */
+.par-symbol,
+[data-speed] {
+	will-change: transform;
+}
+
+/* reveal-item initial state (if JS is slow) */
+.reveal-item {
+	opacity: 0;
+	transform: translateY(12px);
+}
+
+.section {
+	opacity: 0.98;
+}
+
+/* ensure window-shell has transform/position baseline */
+.window-shell {
+  @include glass(0.12, 14px);
+  border-radius: 10px;
+  overflow: hidden;
+  transform-origin: center center;
+}
+
+/* make the resize handle slightly visible */
+.window-shell .cursor-se-resize {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.03);
+  border-radius: 4px;
+}

@@ -1,0 +1,25 @@
+@import "_mixins.scss";
+
+$bg: #070707;
+$surface: rgba(255, 255, 255, 0.04);
+$text: #f9f9f9;
+$gold: #d4af37;
+$glass-blur: 12px;
+
+.glass {
+	@include glass(0.1, $glass-blur);
+	border-radius: 12px;
+}
+
+.window-shell {
+	@include glass(0.12, 14px);
+	border-radius: 10px;
+	overflow: hidden;
+	transform-origin: center center;
+}
+
+.dock {
+	@include glass(0.08, 8px);
+	padding: 8px 14px;
+	border-radius: 999px;
+}

@@ -1,0 +1,8 @@
+// _mixins.scss
+@mixin glass($opacity: 0.12, $blur: 12px) {
+  background: rgba(255,255,255,$opacity);
+  backdrop-filter: blur($blur);
+  -webkit-backdrop-filter: blur($blur);
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 6px 30px rgba(0,0,0,0.45);
+}
