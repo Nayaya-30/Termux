@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css" />
+    <title>Profile Card - Frontend Wizards Stage 0</title>
+  
+</head>
+<body>
+    <article class="profile-card" data-testid="test-profile-card">
+        <div class="card-content">
+            <header class="card-header">
+                <figure class="avatar-figure">
+                    <img 
+                        src="https://ui-avatars.com/api/?name=Sarah+Johnson&size=400&background=667eea&color=ffffff&bold=true&font-size=0.4" 
+                        alt="Profile picture of Sarah Johnson"
+                        class="avatar"
+                        data-testid="test-user-avatar"
+                    >
+                </figure>
+                
+                <div class="header-text">
+                    <h2 class="user-name" data-testid="test-user-name">Sarah Johnson</h2>
+                    <p class="user-bio" data-testid="test-user-bio">
+                        Full-stack developer passionate about creating accessible and beautiful web experiences. 
+                        I love turning complex problems into simple, elegant solutions that make a real difference 
+                        in people's lives.
+                    </p>
+                    <div class="user-time" data-testid="test-user-time" role="status" aria-live="polite"></div>
+                </div>
+            </header>
+
+            <nav class="social-nav" aria-label="Social media links">
+                <ul class="social-links" data-testid="test-user-social-links">
+                    <li>
+                        <a 
+                            href="https://twitter.com/sarahjohnson" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-twitter"
+                        >
+                            <span aria-hidden="true">🐦</span> Twitter
+                        </a>
+                    </li>
+                                        <li>
+                        <a 
+                            href="https://twitter.com/sarahjohnson" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-twitter"
+                        >
+                            <span aria-hidden="true">🐦</span> Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://github.com/sarahjohnson" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-github"
+                        >
+                            <span aria-hidden="true">💻</span> GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://linkedin.com/in/sarahjohnson" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-linkedin"
+                        >
+                            <span aria-hidden="true">💼</span> LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section class="info-section hobbies-section">
+                <h3>
+                    <span aria-hidden="true">✨</span>
+                    Hobbies & Interests
+                </h3>
+                <ul class="info-list" data-testid="test-user-hobbies">
+                    <li>Photography</li>
+                    <li>Hiking</li>
+                    <li>Reading sci-fi novels</li>
+                    <li>Playing guitar</li>
+                    <li>Cooking international cuisine</li>
+                </ul>
+            </section>
+
+            <section class="info-section dislikes-section">
+                <h3>
+                    <span aria-hidden="true">❌</span>
+                    Pet Peeves
+                </h3>
+                <ul class="info-list" data-testid="test-user-dislikes">
+                    <li>Poorly documented code</li>
+                    <li>Traffic jams</li>
+                    <li>Cold coffee</li>
+                    <li>Spoilers</li>
+                </ul>
+            </section>
+        </div>
+    </article>
+
+    <script src="profile.js"></script>
+</body>
+</html>

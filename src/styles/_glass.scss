@@ -1,10 +1,5 @@
 @import "_mixins.scss";
-
-$bg: #070707;
-$surface: rgba(255, 255, 255, 0.04);
-$text: #f9f9f9;
-$gold: #d4af37;
-$glass-blur: 12px;
+@import './_variables.scss';
 
 .glass {
 	@include glass(0.1, $glass-blur);

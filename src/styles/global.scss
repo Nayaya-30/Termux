@@ -1,10 +1,8 @@
-@import 'tailwindcss';
-
-$glass-bg: rgba(255, 255, 255, 0.12);
-$glass-border: rgba(255, 255, 255, 0.25);
-$gold: #d4af37;
-$light-gold: #f6e27a;
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './_mixins.scss';
+@import './_variables.scss';
 
 body {
 	@apply bg-night text-white overflow-x-hidden;
@@ -65,17 +63,17 @@ svg path {
 
 /* ensure window-shell has transform/position baseline */
 .window-shell {
-  @include glass(0.12, 14px);
-  border-radius: 10px;
-  overflow: hidden;
-  transform-origin: center center;
+	@include glass(0.12, 14px);
+	border-radius: 10px;
+	overflow: hidden;
+	transform-origin: center center;
 }
 
 /* make the resize handle slightly visible */
 .window-shell .cursor-se-resize {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255,255,255,0.03);
-  border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(255, 255, 255, 0.03);
+	border-radius: 4px;
 }

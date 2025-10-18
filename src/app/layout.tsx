@@ -1,22 +1,20 @@
-'use client';
 import '@/styles/global.scss';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { store } from '@/store/store';
 import ThemeSwitch from '@/components/ui/ThemeSwitch';
-import CommandPalette from '@/components/CommandPalette';
+import { CommandPalette } from '@/components/index.ts';
 import MorphingSymbolSet from '@/components/MorphingSymbolSet';
 import GuidedTour from '@/components/GuidedTour';
 import GuidedTourManager from '@/components/GuidedTourManager';
 import Dock from '@/components/Dock';
 import FloatingWindow from '@/components/FloatingWindow';
-// import { Metadata } from 'next';
+import { Metadata } from 'next';
 
-
-// export const metadata: Metadata = {
-//	title: 'Usouph OS — From Numbers to Interfaces',
-//	description: 'Interactive glassmorphic portfolio'
-// };
+export const metadata: Metadata = {
+	title: 'Usouph OS — From Numbers to Interfaces',
+	description: 'Interactive glassmorphic portfolio'
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (

@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store/store';
-import IntroCinematic from '@/IntroCinematic';
+import IntroCinematic from './IntroCinematic.tsx';
 
 export default function GuidedTourManager() {
   const showIntro = useSelector((state: RootState) => state.guidedTour.showIntro);

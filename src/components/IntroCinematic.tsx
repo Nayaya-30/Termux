@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import MorphingSymbolSet from '@/MorphingSymbolSet';
+import MorphingSymbolSet from './MorphingSymbolSet.tsx';
 import { useDispatch } from 'react-redux';
 import { hideIntro } from '@/slices/guidedTourSlice';
 
