@@ -1,5 +1,8 @@
-export { Clock } from './Clock.tsx';
-export { Timer } from './Timer.tsx';
-export { Stopwatch } from './Stopwatch.tsx';
-export { Calculator } from './Calculator.tsx';
-export { Calendar } from './Calendar.tsx';
+import Clock from './Clock';
+import Timer from './Timer';
+import Stopwatch from './Stopwatch';
+import Calculator from './Calculator';
+import Calendar from './Calendar';
+import AnalogClock from './AnalogClock';
+
+export { Clock, Timer, Stopwatch, Calculator, Calendar, AnalogClock };

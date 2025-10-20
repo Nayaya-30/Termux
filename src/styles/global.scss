@@ -1,11 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@import './_mixins.scss';
-@import './_variables.scss';
+@import './_variables';
+@import 'tailwindcss';
 
 body {
-	@apply bg-night text-white overflow-x-hidden;
+	// @apply bg-night text-white overflow-x-hidden;
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -63,7 +60,7 @@ svg path {
 
 /* ensure window-shell has transform/position baseline */
 .window-shell {
-	@include glass(0.12, 14px);
+	@include mixins.glass(0.12, 14px);
 	border-radius: 10px;
 	overflow: hidden;
 	transform-origin: center center;

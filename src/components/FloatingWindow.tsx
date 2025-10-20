@@ -1,4 +1,6 @@
-import { useAppDispatch, useAppSelector } from '@/store';
+'use client';
+
+import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks';
 import { closeApp } from '@/slices/uiSlice';
 import Draggable from 'react-draggable';
 import
@@ -6,7 +8,7 @@ import
 	Stopwatch,
 	Timer,
 	Calendar,
-	Calculator}  from './interactiveApps/index.ts';
+	Calculator}  from './interactiveApps/index';
 
 export default function FloatingWindow() {
 	const { activeApp } = useAppSelector(s => s.ui);

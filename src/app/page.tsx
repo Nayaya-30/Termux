@@ -1,11 +1,11 @@
-import ScrollAnimator from '@/components/ScrollAnimator';
+import { ScrollAnimator } from '@/components/index';
 import {
 	Hero,
 	Story,
 	Projects,
-	InterInteractives,
+	Interactives,
 	Contact
-} from './sections/index.ts'
+} from './sections/index';
 
 export default function Page() {
 	return (

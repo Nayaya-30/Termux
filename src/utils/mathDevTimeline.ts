@@ -1,4 +1,3 @@
-'use client';
 export const mathToDevTimeline = [
   { year: 2018, text: "Solving equations and proofs, but curious about patterns beyond numbers." },
   { year: 2019, text: "Discovered algorithms — logic felt like pure math with purpose." },

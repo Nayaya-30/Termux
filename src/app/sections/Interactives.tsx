@@ -1,3 +1,6 @@
+
+'use client';
+
 export default function Interactives() {
 	return (
 		<section className="min-h-screen flex flex-col items-center justify-center text-center px-6">

@@ -1,5 +1,5 @@
 'use client';
-import { useAppDispatch } from '@/store';
+import { useAppDispatch } from '@/hooks/reduxHooks';
 import { openApp } from '@/slices/uiSlice';
 import { motion } from 'framer-motion';
 import Image from 'next/image';

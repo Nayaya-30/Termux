@@ -1,5 +1,7 @@
-export { Hero } from './Hero.tsx';
-export { Contact } from './Contact.tsx';
-export { Interactives } from './Interactives.tsx';
-export { Projects } from './Projects.tsx';
-export { Story } from './Story.tsx';
+import Hero from './Hero';
+import Contact from './Contact';
+import Interactives from './Interactives';
+import Projects from './Projects';
+import Story from './Story';
+
+export { Hero, Contact, Interactives, Projects, Story };
